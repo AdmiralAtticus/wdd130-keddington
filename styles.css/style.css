@@ -38,3 +38,357 @@ header{
     transform: scale(1.05);
 }
 
+.logo-icon{
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a:hover { 
+    color: #D84315;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D84315;
+    transition: width 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.auth-buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-signup{
+    background-color: #D84315;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-signup:hover{
+    background-color: #BF360C;
+    transform: translateY(-2px);
+}
+
+.btn-login{
+    background-color: transparent;
+    color: #D84315;
+    padding: 10px 25px;
+    border: 2px solid #D84315;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover{
+    background-color: #D84315;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero {
+    padding: 60px 50px 40px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #D84315;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-recipe {
+    background-color: #D84315;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-recipe:hover {
+    background-color: #BF360C;
+    transform: translateY(-2px);
+}
+
+.btn-shopping {
+    background-color: transparent;
+    color: #D84315;
+    padding: 15px 30px;
+    border: 2px solid #D84315;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-shopping:hover {
+    background-color: #D84315;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 50px 50px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 14px;
+    color: #D84315;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.meal-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meal-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.meal-item:last-child {
+    border-bottom: none;
+}
+
+.meal-item:hover {
+    background-color: #FFF8F5;
+    padding-left: 10px;
+    margin-left: -10px;
+    border-radius: 5px;
+}
+
+.meal-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.meal-description {
+    font-size: 14px;
+    color: #999;
+}
+
+.btn-next-meal {
+    background-color: #D84315;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-next-meal:hover {
+    background-color: #BF360C;
+    transform: translateY(-2px);
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #FFB74D 0%, #FF9800 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-view-recipe {
+    background-color: transparent;
+    color: #D84315;
+    padding: 12px 25px;
+    border: 2px solid #D84315;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-view-recipe:hover {
+    background-color: #D84315;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.placeholder-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.calendar-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.calendar-icon {
+    font-size: 48px;
+    color: #ccc;
+}
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn-recipe,
+    .btn-shopping {
+        width: 100%;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px 20px;
+    }
+}
